@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hans Christian P. Santos — Full-Stack + Embedded Builds</title>
+<meta name="description" content="Portfolio of Hans Christian P. Santos: full-stack web apps, ESP32 / Arduino / Raspberry Pi firmware, and custom electronics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316130E'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23FF4D00'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="wordmark" href="#top" aria-label="Hans Christian P. Santos — home">HS<span class="wordmark-dot" aria-hidden="true"></span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="head-mail" href="mailto:hansprielasantos02@gmail.com">hansprielasantos02@gmail.com</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap" aria-labelledby="intro-title">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1 id="intro-title">Hans Christian P. Santos</h1>
+        <p class="role">Full-stack developer building web apps, firmware &amp; custom electronics.</p>
+        <p class="lede">I ship the whole stack: dashboards and APIs on top, ESP32 / Arduino / Raspberry Pi firmware underneath, and the circuits they run on. Builds are below — each with parts, code, and outcome.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="mailto:hansprielasantos02@gmail.com">Email me</a>
+          <a class="text-link" href="https://github.com/hanssantos02">GitHub
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M3.5 2.5h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="text-link" href="https://www.linkedin.com/in/hans-santos-342712335/">LinkedIn
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 9.5 9.5 2.5M3.5 2.5h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p class="hero-meta mono">Alangilan, Batangas City, Batangas, Philippines · Available Monday - Saturday · UTC+8</p>
+        <p class="hero-status mono" role="status"><span class="led" aria-hidden="true"></span><span id="statusLine">link: warming up…</span></p>
+      </div>
+
+      <div class="hero-well" aria-label="Featured build schematic">
+        <svg class="trace" viewBox="0 0 400 300" fill="none" aria-hidden="true">
+          <rect x="24" y="24" width="120" height="64" rx="6" stroke="#16130E" stroke-width="1.5"/>
+          <rect x="30" y="30" width="44" height="10" rx="2" fill="#16130E" opacity=".85"/>
+          <line x1="30" y1="50" x2="120" y2="50" stroke="#16130E" stroke-width="1" opacity=".35"/>
+          <line x1="30" y1="60" x2="96" y2="60" stroke="#16130E" stroke-width="1" opacity=".35"/>
+          <line x1="30" y1="70" x2="108" y2="70" stroke="#16130E" stroke-width="1" opacity=".35"/>
+          <path id="tracePath" d="M144 56 H214 V150 H290 V214" stroke="#A83A00" stroke-width="1.75"/>
+          <circle cx="144" cy="56" r="3.5" fill="#16130E"/>
+          <rect x="252" y="196" width="124" height="80" rx="6" stroke="#16130E" stroke-width="1.5"/>
+          <line x1="262" y1="218" x2="340" y2="218" stroke="#16130E" stroke-width="1" opacity=".35"/>
+          <line x1="262" y1="232" x2="318" y2="232" stroke="#16130E" stroke-width="1" opacity=".35"/>
+          <line x1="262" y1="246" x2="330" y2="246" stroke="#16130E" stroke-width="1" opacity=".35"/>
+          <circle id="traceLed" cx="290" cy="150" r="6" fill="#FF4D00" stroke="#16130E" stroke-width="1.5"/>
+          <circle cx="214" cy="150" r="2.5" fill="#16130E"/>
+        </svg>
+        <div class="well-cards">
+          <p class="well-label mono">FEATURED LOG — 01</p>
+          <p class="well-title">Smart Fingerprint Unlock Drawer</p>
+          <p class="well-desc">Smart drawer with fingerprint unlock — a local site enrolls users and logs who opened it, and when.</p>
+          <ul class="spec-list mono">
+            <li><span>MCU</span><span>ESP32</span></li>
+            <li><span>LINK</span><span>UART sensor · local dashboard</span></li>
+            <li><span>BOARD</span><span>Perfboard · relay lock driver</span></li>
+          </ul>
+          <div class="well-links">
+            <a href="https://github.com/hanssantos02/Smart-Fingerprint-Unlock-Drawer">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="wrap work" aria-labelledby="work-title">
+    <div class="section-head">
+      <h2 id="work-title">Work log</h2>
+      <p>Selected builds across software, firmware, and hardware. Filter by layer.</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter projects by layer">
+      <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="web" aria-pressed="false">Web</button>
+      <button class="filter" data-filter="firmware" aria-pressed="false">Firmware</button>
+      <button class="filter" data-filter="electronics" aria-pressed="false">Electronics</button>
+      <span class="filter-ink" aria-hidden="true"></span>
+    </div>
+
+    <ol class="log" id="projectLog">
+      <li class="log-row" data-domains="firmware electronics">
+        <div class="row-main">
+          <p class="row-index mono">01</p>
+          <h3>Smart Fingerprint Unlock Drawer</h3>
+          <p>Smart drawer with fingerprint unlock — a local site enrolls users and logs who opened it, and when.</p>
+          <ul class="tags mono" aria-label="Stack"><li>ESP32</li><li>UART sensor</li><li>Perfboard</li></ul>
+        </div>
+        <div class="row-side mono">
+          <p><span>FW</span><span>C++ · fingerprint match</span></p>
+          <p><span>WEB</span><span>Local site · access log</span></p>
+          <p class="row-links"><a href="https://github.com/hanssantos02/Smart-Fingerprint-Unlock-Drawer">Code</a></p>
+        </div>
+      </li>
+      <li class="log-row" data-domains="web">
+        <div class="row-main">
+          <p class="row-index mono">02</p>
+          <h3>Calculator</h3>
+          <p>Functional calculator in vanilla JavaScript with chained operations, divide-by-zero protection, and operator highlighting.</p>
+          <ul class="tags mono" aria-label="Stack"><li>JavaScript</li><li>HTML</li><li>CSS Grid</li></ul>
+        </div>
+        <div class="row-side mono">
+          <p><span>UI</span><span>event delegation</span></p>
+          <p><span>LOGIC</span><span>state-driven display</span></p>
+          <p class="row-links"><a href="https://hanssantos02.github.io/Calculator/">Live</a><a href="https://github.com/hanssantos02/Calculator">Code</a></p>
+        </div>
+      </li>
+      <li class="log-row" data-domains="web">
+        <div class="row-main">
+          <p class="row-index mono">03</p>
+          <h3>Library</h3>
+          <p>Book tracker with modal entry form, read/unread toggling, and a grid that re-flows as the collection changes.</p>
+          <ul class="tags mono" aria-label="Stack"><li>JavaScript</li><li>HTML</li><li>CSS Grid</li></ul>
+        </div>
+        <div class="row-side mono">
+          <p><span>DATA</span><span>constructor + render()</span></p>
+          <p><span>UI</span><span>event delegation</span></p>
+          <p class="row-links"><a href="https://hanssantos02.github.io/Library/">Live</a><a href="https://github.com/hanssantos02/Library">Code</a></p>
+        </div>
+      </li>
+      <li class="log-row" data-domains="web">
+        <div class="row-main">
+          <p class="row-index mono">04</p>
+          <h3>Tic-Tac-Toe</h3>
+          <p>State-driven game with MVC separation, custom player names, and screen-reader announcements.</p>
+          <ul class="tags mono" aria-label="Stack"><li>JavaScript</li><li>HTML</li><li>CSS Grid</li></ul>
+        </div>
+        <div class="row-side mono">
+          <p><span>ARCH</span><span>pure rules engine</span></p>
+          <p><span>UI</span><span>idempotent render</span></p>
+          <p class="row-links"><a href="https://hanssantos02.github.io/tic-tac-toe/">Live</a><a href="https://github.com/hanssantos02/tic-tac-toe">Code</a></p>
+        </div>
+      </li>
+    </ol>
+    <p class="log-empty mono" id="logEmpty" hidden>No entries on this layer yet — add yours in the TODO block.</p>
+  </section>
+
+  <section id="about" class="wrap about" aria-labelledby="about-title">
+    <div class="section-head">
+      <h2 id="about-title">About</h2>
+      <p class="about-prose">I'm a full-stack developer who likes the bottom of the stack best: soldering the board, flashing the firmware, then building the dashboard that makes it legible. Based in Batangas City, open to full-stack, backend, and embedded roles.</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <h3>Layers I cover</h3>
+        <ul class="plain">
+          <li>Web apps, APIs &amp; dashboards</li>
+          <li>ESP32 / Arduino / Raspberry Pi firmware</li>
+          <li>Schematic &amp; bench bring-up</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Toolchain</h3>
+        <ul class="plain mono">
+          <li>TypeScript · Node · Postgres</li>
+          <li>C/C++ · MicroPython · MQTT</li>
+          <li>Sketchup · 3D printing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Currently</h3>
+        <ul class="plain">
+          <li>Building: CCTV smoke detection via camera feed</li>
+          <li>Learning: Machine Learning</li>
+          <li>Open to: Freelance + Full-time</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="close" aria-labelledby="contact-title">
+    <div class="wrap">
+      <!-- TODO(owner): contact lines -->
+      <h2 id="contact-title">Have a website or an electronics build in mind? Let's make it.</h2>
+      <p>Whether it's a website you need built or an electronics project you want brought to life. Send the idea, Let's work through it.</p>
+      <div class="close-actions">
+        <a class="btn-light" href="mailto:hansprielasantos02@gmail.com">Email Me</a>
+        <a class="close-link" href="https://github.com/hanssantos02">GitHub</a>
+        <a class="close-link" href="https://www.linkedin.com/in/hans-santos-342712335/">LinkedIn</a>
+        <a class="close-link" href="Resume.pdf">Résumé</a>
+      </div>
+      <p class="close-foot mono">© 2026 Hans Christian P. Santos · Batangas City, Philippines</p>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
